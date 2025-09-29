@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penang Street Food - Jalan Eats</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/penang.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Jalan<span>Eats</span></h1>
+                <p>Malaysian Street Food Adventures</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">States <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="penang.html" class="active">Penang</a>
+                            <a href="kl.html">Kuala Lumpur</a>
+                            <a href="ipoh.html">Ipoh</a>
+                            <a href="melaka.html">Melaka</a>
+                            <a href="johor.html">Johor</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li id="auth-status">
+                        <a href="login.html" class="btn-login" id="login-button">Login <i class="fas fa-user"></i></a>
+                        <div id="user-welcome" style="display: none;">
+                            <span>Welcome back, <span id="username-display"></span></span>
+                            <a href="#" id="logout-button" class="logout-btn">
+                                <i class="fas fa-sign-out-alt"></i> Sign Out
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="state-hero penang-hero">
+        <div class="container hero-content">
+            <h1>Penang Street Food Paradise</h1>
+            <p>Discover Malaysia's food capital with its legendary hawker culture and UNESCO-recognized street food scene</p>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="state-intro">
+        <div class="container">
+            <h2 class="section-title">Penang's Culinary Legacy</h2>
+            <div class="intro-content">
+                <div class="intro-text">
+                    <p>Penang is widely regarded as Malaysia's food capital, where diverse cultures have created an extraordinary culinary landscape. The island's hawker culture represents one of the world's most vibrant street food scenes.</p>
+                    <p>From the famous Georgetown hawker centers to hidden alley stalls, Penang offers an unparalleled variety of flavors. The UNESCO recognition of Georgetown as a World Heritage site has also highlighted the importance of preserving its unique food culture.</p>
+                    <div class="food-fact">
+                        <h3>Did You Know?</h3>
+                        <p id="food-fact">Penang's Char Kway Teow is considered one of the world's best street food dishes, with some stalls having recipes passed down for over 100 years.</p>
+                    </div>
+                </div>
+                <div class="intro-image">
+                    <div class="image-placeholder" style="background-image: url('images/penangback.jpg');">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Dishes -->
+    <section class="featured-dishes">
+        <div class="container">
+            <h2 class="section-title">Must-Try Penang Street Foods</h2>
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <div class="dish-image" style="background-image: url('images/pngkwayteow.jpg');"></div>
+                    <div class="dish-content">
+                        <h3>Char Kway Teow</h3>
+                        <p>Stir-fried flat rice noodles with prawns, cockles, Chinese sausage, bean sprouts, and dark soy sauce - Penang's signature dish.</p>
+                        <div class="dish-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Gurney Drive</span>
+                            <span><i class="fas fa-star"></i> 4.9/5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-image" style="background-image: url('images/laksa.jpg');"></div>
+                    <div class="dish-content">
+                        <h3>Assam Laksa</h3>
+                        <p>Tangy fish-based noodle soup with tamarind, mackerel, cucumber, onions, and mint - a UNESCO recognized dish.</p>
+                        <div class="dish-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Air Itam Market</span>
+                            <span><i class="fas fa-star"></i> 4.8/5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-image" style="background-image: url('images/hokkien\ mee.jpg');"></div>
+                    <div class="dish-content">
+                        <h3>Penang Hokkien Mee</h3>
+                        <p>Spicy prawn noodle soup with a rich broth made from prawns and pork bones, served with kangkung and bean sprouts.</p>
+                        <div class="dish-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Jalan Argyll</span>
+                            <span><i class="fas fa-star"></i> 4.7/5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-image" style="background-image: url('images/rojak.jpg');"></div>
+                    <div class="dish-content">
+                        <h3>Penang Rojak</h3>
+                        <p>Fresh fruit and vegetable salad with a sweet and spicy sauce made from palm sugar, tamarind, and chili.</p>
+                        <div class="dish-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Lorong Baru</span>
+                            <span><i class="fas fa-star"></i> 4.6/5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-image" style="background-image: url('images/pngcendol.jpg');"></div>
+                    <div class="dish-content">
+                        <h3>Penang Cendol</h3>
+                        <p>Shaved ice dessert with green rice flour jelly, coconut milk, palm sugar, red beans, and durian for the adventurous.</p>
+                        <div class="dish-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Lebuh Keng Kwee</span>
+                            <span><i class="fas fa-star"></i> 4.8/5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Locations Map -->
+    <section class="food-map">
+        <div class="container">
+            <h2 class="section-title">Penang Street Food Hotspots</h2>
+            <div class="map-container">
+                <div id="penang-map" style="height: 100%; width: 100%;"></div>
+            </div>
+            <div class="location-list">
+                <div class="location-item">
+                    <h3>Gurney Drive Hawker Centre</h3>
+                    <p><i class="far fa-clock"></i> Daily, 6pm - 2am</p>
+                    <p><i class="fas fa-utensils"></i> Famous for: Char Kway Teow, Oyster Omelette, Satay</p>
+                </div>
+                <div class="location-item">
+                    <h3>Red Garden Food Paradise</h3>
+                    <p><i class="far fa-clock"></i> Daily, 6pm - 1am</p>
+                    <p><i class="fas fa-utensils"></i> Famous for: Hokkien Mee, Laksa, Chinese cuisine</p>
+                </div>
+                <div class="location-item">
+                    <h3>New Lane Hawker Centre</h3>
+                    <p><i class="far fa-clock"></i> Daily, 5:30pm - 12am</p>
+                    <p><i class="fas fa-utensils"></i> Famous for: White curry noodles, Fried kway teow</p>
+                </div>
+                <div class="location-item">
+                    <h3>Air Itam Market</h3>
+                    <p><i class="far fa-clock"></i> Daily, 7am - 3pm</p>
+                    <p><i class="fas fa-utensils"></i> Famous for: Assam Laksa, Cendol, Local breakfast</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Comments Section with Emoji Reactions -->
+    <section class="comments-section">
+        <div class="container">
+            <h2 class="section-title">Foodie Reviews</h2>
+            
+            <!-- Review Statistics -->
+            <div class="review-stats">
+                <div class="overall-rating">
+                    <div class="rating-number" id="overall-rating-number">0.0</div>
+                    <div class="rating-stars">
+                        <span class="emoji-rating" id="overall-emoji">😐</span>
+                        <div class="stars" id="overall-stars">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="total-reviews" id="total-reviews">No reviews yet</div>
+                    </div>
+                </div>
+                <div class="rating-breakdown">
+                    <div class="rating-bar">
+                        <span class="rating-label">5 ⭐ 🤩</span>
+                        <div class="bar">
+                            <div class="bar-fill" id="bar-5" style="width: 0%"></div>
+                        </div>
+                        <span class="rating-count" id="count-5">0</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span class="rating-label">4 ⭐ 😊</span>
+                        <div class="bar">
+                            <div class="bar-fill" id="bar-4" style="width: 0%"></div>
+                        </div>
+                        <span class="rating-count" id="count-4">0</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span class="rating-label">3 ⭐ 😐</span>
+                        <div class="bar">
+                            <div class="bar-fill" id="bar-3" style="width: 0%"></div>
+                        </div>
+                        <span class="rating-count" id="count-3">0</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span class="rating-label">2 ⭐ 😕</span>
+                        <div class="bar">
+                            <div class="bar-fill" id="bar-2" style="width: 0%"></div>
+                        </div>
+                        <span class="rating-count" id="count-2">0</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span class="rating-label">1 ⭐ 😤</span>
+                        <div class="bar">
+                            <div class="bar-fill" id="bar-1" style="width: 0%"></div>
+                        </div>
+                        <span class="rating-count" id="count-1">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reviews Container -->
+            <div id="comments-container">
+                <div class="no-reviews-message">
+                    <div class="no-reviews-icon">🍜</div>
+                    <h3>No reviews yet!</h3>
+                    <p>Be the first to share your Penang street food experience</p>
+                </div>
+            </div>
+
+            <!-- Enhanced Comment Form -->
+            <div id="comment-form-container" style="display: none;">
+                <h3>Share Your Experience</h3>
+                <div class="comment-form">
+                    <form id="comment-form">
+                        <div class="form-group">
+                            <label for="comment-title">Review Title</label>
+                            <input type="text" id="comment-title" class="form-input" placeholder="Give your review a title..." required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="comment-rating">Your Rating</label>
+                            <div class="rating-selector">
+                                <div class="rating-option" data-rating="5">
+                                    <input type="radio" name="rating" value="5" id="rating-5">
+                                    <label for="rating-5">
+                                        <div class="emoji-large">🤩</div>
+                                        <div class="rating-text">Amazing!</div>
+                                        <div class="stars-display">⭐⭐⭐⭐⭐</div>
+                                    </label>
+                                </div>
+                                <div class="rating-option" data-rating="4">
+                                    <input type="radio" name="rating" value="4" id="rating-4">
+                                    <label for="rating-4">
+                                        <div class="emoji-large">😊</div>
+                                        <div class="rating-text">Great!</div>
+                                        <div class="stars-display">⭐⭐⭐⭐☆</div>
+                                    </label>
+                                </div>
+                                <div class="rating-option" data-rating="3">
+                                    <input type="radio" name="rating" value="3" id="rating-3">
+                                    <label for="rating-3">
+                                        <div class="emoji-large">😐</div>
+                                        <div class="rating-text">Okay</div>
+                                        <div class="stars-display">⭐⭐⭐☆☆</div>
+                                    </label>
+                                </div>
+                                <div class="rating-option" data-rating="2">
+                                    <input type="radio" name="rating" value="2" id="rating-2">
+                                    <label for="rating-2">
+                                        <div class="emoji-large">😕</div>
+                                        <div class="rating-text">Not Great</div>
+                                        <div class="stars-display">⭐⭐☆☆☆</div>
+                                    </label>
+                                </div>
+                                <div class="rating-option" data-rating="1">
+                                    <input type="radio" name="rating" value="1" id="rating-1">
+                                    <label for="rating-1">
+                                        <div class="emoji-large">😤</div>
+                                        <div class="rating-text">Terrible</div>
+                                        <div class="stars-display">⭐☆☆☆☆</div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="comment-text">Your Review</label>
+                            <textarea id="comment-text" class="form-input" rows="4" placeholder="Tell us about your experience with Penang street food..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit Review</button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="login-prompt">
+                <div class="login-prompt-card">
+                    <div class="login-icon">🍜</div>
+                    <h3>Share Your Food Adventure!</h3>
+                    <p>Join our community of food lovers and share your Penang street food experiences</p>
+                    <a href="login.html" class="btn btn-primary">Login to Review</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Jalan Eats</h3>
+                    <p>Your guide to the best street food experiences across Malaysia. Join us in celebrating the
+                        diverse flavors that make Malaysian cuisine unique.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.x.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>States</h3>
+                    <ul>
+                        <li><a href="penang.html">Penang</a></li>
+                        <li><a href="kl.html">Kuala Lumpur</a></li>
+                        <li><a href="ipoh.html">Ipoh</a></li>
+                        <li><a href="melaka.html">Melaka</a></li>
+                        <li><a href="johor.html">Johor</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@jalaneats.com</li>
+                        <li><i class="fas fa-phone"></i> +60 3 1234 5678</li>
+                        <li><i class="fas fa-map-marker-alt"></i> UTAR, Kampar</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jalan Eats. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/penang.js"></script>
+    
+    <!-- Enhanced Review JavaScript -->
+    <script>
+        // Review data storage
+        let reviewData = {
+            1: 0, 2: 0, 3: 0, 4: 0, 5: 0,
+            totalReviews: 0,
+            totalStars: 0
+        };
+
+        // Reviews array to store all reviews
+        let reviews = [];
+
+        // Rating emoji mapping
+        const ratingEmojis = {
+            1: '😤',
+            2: '😕', 
+            3: '😐',
+            4: '😊',
+            5: '🤩'
+        };
+
+        const ratingTexts = {
+            1: 'Terrible',
+            2: 'Not Great',
+            3: 'Okay',
+            4: 'Great!',
+            5: 'Amazing!'
+        };
+
+        // Save data to localStorage
+        function saveToLocalStorage() {
+            try {
+                localStorage.setItem('penangReviewData', JSON.stringify(reviewData));
+                localStorage.setItem('penangReviews', JSON.stringify(reviews));
+            } catch (error) {
+                console.warn('localStorage not available:', error);
+            }
+        }
+
+        // Load data from localStorage
+        function loadFromLocalStorage() {
+            try {
+                const savedReviewData = localStorage.getItem('penangReviewData');
+                const savedReviews = localStorage.getItem('penangReviews');
+                
+                if (savedReviewData) {
+                    reviewData = JSON.parse(savedReviewData);
+                }
+                
+                if (savedReviews) {
+                    reviews = JSON.parse(savedReviews);
+                }
+            } catch (error) {
+                console.warn('Error loading from localStorage:', error);
+            }
+        }
+
+        // Create review HTML element
+        function createReviewElement(review) {
+            const reviewElement = document.createElement('div');
+            reviewElement.className = review.isUserReview ? 'comment user-review' : 'comment';
+            
+            // Create star display
+            let starsHtml = '';
+            for (let i = 1; i <= 5; i++) {
+                if (i <= review.rating) {
+                    starsHtml += `<i class="fas fa-star"></i>`;
+                } else {
+                    starsHtml += `<i class="far fa-star"></i>`;
+                }
+            }
+            
+            reviewElement.innerHTML = `
+                <div class="comment-header">
+                    <div class="comment-author-info">
+                        <div class="comment-author">${review.author}</div>
+                        <div class="comment-date">${review.date}</div>
+                    </div>
+                    <div class="comment-rating-display">
+                        <span class="comment-emoji">${ratingEmojis[review.rating]}</span>
+                        <div class="comment-stars">
+                            ${starsHtml}
+                        </div>
+                    </div>
+                </div>
+                <h4 class="comment-title">${review.title}</h4>
+                <p class="comment-text">${review.text}</p>
+            `;
+            
+            return reviewElement;
+        }
+
+        // Render all reviews
+        function renderReviews() {
+            const commentsContainer = document.getElementById('comments-container');
+            
+            // Clear existing reviews
+            commentsContainer.innerHTML = '';
+            
+            if (reviews.length === 0) {
+                // Show no reviews message
+                const noReviewsMessage = document.createElement('div');
+                noReviewsMessage.className = 'no-reviews-message';
+                noReviewsMessage.innerHTML = `
+                    <div class="no-reviews-icon">🍜</div>
+                    <h3>No reviews yet!</h3>
+                    <p>Be the first to share your Penang street food experience</p>
+                `;
+                commentsContainer.appendChild(noReviewsMessage);
+            } else {
+                // Render all reviews (newest first)
+                reviews.slice().reverse().forEach(review => {
+                    const reviewElement = createReviewElement(review);
+                    commentsContainer.appendChild(reviewElement);
+                });
+            }
+        }
+
+        // Update review statistics
+        function updateReviewStats() {
+            const totalReviews = reviewData.totalReviews;
+            const totalStars = reviewData.totalStars;
+            const averageRating = totalReviews > 0 ? (totalStars / totalReviews).toFixed(1) : 0.0;
+
+            // Update overall rating
+            document.getElementById('overall-rating-number').textContent = averageRating;
+            document.getElementById('total-reviews').textContent = 
+                totalReviews === 0 ? 'No reviews yet' : 
+                totalReviews === 1 ? 'Based on 1 review' : 
+                `Based on ${totalReviews} reviews`;
+
+            // Update overall emoji and stars
+            const avgRounded = Math.round(averageRating);
+            document.getElementById('overall-emoji').textContent = 
+                totalReviews === 0 ? '😐' : ratingEmojis[avgRounded] || '😐';
+
+            // Update star display
+            const starsContainer = document.getElementById('overall-stars');
+            starsContainer.innerHTML = '';
+            for (let i = 1; i <= 5; i++) {
+                const star = document.createElement('i');
+                star.className = i <= averageRating ? 'fas fa-star' : 'far fa-star';
+                starsContainer.appendChild(star);
+            }
+
+            // Update rating breakdown
+            for (let i = 1; i <= 5; i++) {
+                const count = reviewData[i];
+                const percentage = totalReviews > 0 ? (count / totalReviews) * 100 : 0;
+                
+                document.getElementById(`count-${i}`).textContent = count;
+                document.getElementById(`bar-${i}`).style.width = `${percentage}%`;
+            }
+        }
+
+        // Handle rating selection visual feedback
+        document.querySelectorAll('.rating-option input[type="radio"]').forEach(radio => {
+            radio.addEventListener('change', function() {
+                // Remove active class from all options
+                document.querySelectorAll('.rating-option').forEach(option => {
+                    option.classList.remove('active');
+                });
+                
+                // Add active class to selected option
+                this.closest('.rating-option').classList.add('active');
+            });
+        });
+
+        // Enhanced form submission
+        document.getElementById('comment-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const title = document.getElementById('comment-title').value;
+            const text = document.getElementById('comment-text').value;
+            const rating = parseInt(document.querySelector('input[name="rating"]:checked').value);
+            
+            // Create new review object
+            const newReview = {
+                id: Date.now(), // Simple ID using timestamp
+                title: title,
+                text: text,
+                rating: rating,
+                author: 'You',
+                date: 'Just now',
+                timestamp: new Date().toISOString(),
+                isUserReview: true
+            };
+            
+            // Add to reviews array
+            reviews.push(newReview);
+            
+            // Update review data
+            reviewData[rating]++;
+            reviewData.totalReviews++;
+            reviewData.totalStars += rating;
+            
+            // Save to localStorage
+            saveToLocalStorage();
+            
+            // Re-render reviews and update stats
+            renderReviews();
+            updateReviewStats();
+            
+            // Reset form
+            this.reset();
+            document.querySelectorAll('.rating-option').forEach(option => {
+                option.classList.remove('active');
+            });
+            
+            // Show success message
+            const successMsg = `Thank you for your ${ratingTexts[rating]} review! ${ratingEmojis[rating]}`;
+            
+            // Create and show success notification
+            const notification = document.createElement('div');
+            notification.className = 'success-notification';
+            notification.innerHTML = `
+                <div class="success-content">
+                    <span class="success-emoji">${ratingEmojis[rating]}</span>
+                    <span class="success-text">${successMsg}</span>
+                </div>
+            `;
+            document.body.appendChild(notification);
+            
+            // Remove notification after 3 seconds
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        });
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load saved data
+            loadFromLocalStorage();
+            
+            // Update the date display for existing reviews
+            reviews.forEach(review => {
+                if (review.timestamp) {
+                    const reviewDate = new Date(review.timestamp);
+                    const now = new Date();
+                    const diffInMinutes = Math.floor((now - reviewDate) / (1000 * 60));
+                    
+                    if (diffInMinutes < 1) {
+                        review.date = 'Just now';
+                    } else if (diffInMinutes < 60) {
+                        review.date = `${diffInMinutes} minute${diffInMinutes > 1 ? 's' : ''} ago`;
+                    } else if (diffInMinutes < 1440) { // Less than 24 hours
+                        const hours = Math.floor(diffInMinutes / 60);
+                        review.date = `${hours} hour${hours > 1 ? 's' : ''} ago`;
+                    } else {
+                        const days = Math.floor(diffInMinutes / 1440);
+                        review.date = `${days} day${days > 1 ? 's' : ''} ago`;
+                    }
+                }
+            });
+            
+            // Render reviews and update stats
+            renderReviews();
+            updateReviewStats();
+        });
+    </script>
+    
+    <!-- Google Maps API -->
+    <script>
+        // Initialize Penang map
+        function initPenangMap() {
+            const mapOptions = {
+                center: { lat: 5.4164, lng: 100.3327 },
+                zoom: 13,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                styles: [
+                    {
+                        "featureType": "administrative",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{ "color": "#444444" }]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "all",
+                        "stylers": [{ "color": "#f2f2f2" }]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "all",
+                        "stylers": [{ "visibility": "off" }]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "all",
+                        "stylers": [{ "saturation": -100 }, { "lightness": 45 }]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "all",
+                        "stylers": [{ "visibility": "simplified" }]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "labels.icon",
+                        "stylers": [{ "visibility": "off" }]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "all",
+                        "stylers": [{ "visibility": "off" }]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "all",
+                        "stylers": [{ "color": "#4285F4" }, { "visibility": "on" }]
+                    }
+                ]
+            };
+
+            const map = new google.maps.Map(document.getElementById('penang-map'), mapOptions);
+
+            const locations = [
+                {
+                    title: 'Gurney Drive Hawker Centre',
+                    position: { lat: 5.4365, lng: 100.3102 },
+                    info: 'Daily, 6pm - 2am<br>Famous for: Char Kway Teow, Oyster Omelette, Satay'
+                },
+                {
+                    title: 'Red Garden Food Paradise',
+                    position: { lat: 5.4148, lng: 100.3298 },
+                    info: 'Daily, 6pm - 1am<br>Famous for: Hokkien Mee, Laksa, Chinese cuisine'
+                },
+                {
+                    title: 'New Lane Hawker Centre',
+                    position: { lat: 5.4197, lng: 100.3261 },
+                    info: 'Daily, 5:30pm - 12am<br>Famous for: White curry noodles, Fried kway teow'
+                },
+                {
+                    title: 'Air Itam Market',
+                    position: { lat: 5.3983, lng: 100.2707 },
+                    info: 'Daily, 7am - 3pm<br>Famous for: Assam Laksa, Cendol, Local breakfast'
+                }
+            ];
+
+            const infoWindow = new google.maps.InfoWindow();
+
+            locations.forEach(location => {
+                const marker = new google.maps.Marker({
+                    position: location.position,
+                    map: map,
+                    title: location.title,
+                    icon: {
+                        url: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
+                    }
+                });
+
+                marker.addListener('click', () => {
+                    infoWindow.setContent(`
+                        <div class="map-info-window">
+                            <h3>${location.title}</h3>
+                            <p>${location.info}</p>
+                        </div>
+                    `);
+                    infoWindow.open(map, marker);
+                });
+            });
+        }
+
+        // Load Google Maps API
+        function loadGoogleMaps() {
+            const script = document.createElement('script');
+            script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDbMAHl2xxe2lmtRU-BOUcrC-5yDVb8-1I&callback=initPenangMap`;
+            script.async = true;
+            script.defer = true;
+            document.head.appendChild(script);
+        }
+
+        // Load the map when the page is ready
+        document.addEventListener('DOMContentLoaded', function () {
+            loadGoogleMaps();
+        });
+    </script>
+</body>
+
+</html>

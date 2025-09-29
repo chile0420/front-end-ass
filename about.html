@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Jalan Eats</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Jalan<span>Eats</span></h1>
+                <p>Malaysian Street Food Adventures</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">States <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="penang.html">Penang</a>
+                            <a href="kl.html">Kuala Lumpur</a>
+                            <a href="ipoh.html">Ipoh</a>
+                            <a href="melaka.html">Melaka</a>
+                            <a href="johor.html">Johor</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li id="auth-status">
+                        <a href="login.html" class="btn-login" id="login-button">Login <i class="fas fa-user"></i></a>
+                        <div id="user-welcome" style="display: none;">
+                            <span>Welcome back, <span id="username-display"></span></span>
+                            <a href="#" id="logout-button" class="logout-btn">
+                                <i class="fas fa-sign-out-alt"></i> Sign Out
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Hero Section -->
+    <section class="about-hero">
+        <div class="container about-hero-content">
+            <h1>Discover the Faces Behind Jalan Eats</h1>
+            <p>Meet the passionate food enthusiasts dedicated to bringing you Malaysia's best street food experiences</p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <div class="container">
+            <h2 class="section-title">Our Mission</h2>
+            <div class="mission-content">
+                <div class="mission-text">
+                    <p>At Jalan Eats, we believe that the heart of Malaysian culture beats strongest at its street food stalls. Our mission is to preserve, celebrate, and share this culinary heritage with food lovers around the world.</p>
+                    <p>Founded in 2025, our team of dedicated food explorers travels across Malaysia to discover hidden gems, iconic dishes, and the stories behind the food that makes our country so deliciously unique.</p>
+                    <p>We're committed to supporting local vendors, promoting sustainable food tourism, and creating a community where street food enthusiasts can share their experiences and recommendations.</p>
+                </div>
+                <div class="mission-image"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2 class="section-title">Meet Our Team</h2>
+            <p class="text-center" style="max-width: 800px; margin: 0 auto 40px;">We're a diverse group of food lovers, writers, photographers, and Malaysia enthusiasts united by our passion for authentic street food experiences.</p>
+            
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-member">
+                    <div class="member-image" style="background-image: url('images/stanley.jpg');">
+                        <!-- Placeholder for team member photo -->
+                    </div>
+                    <div class="member-info">
+                        <h3>Stanley Chew Jun Xian</h3>
+                        <span class="member-role">23ACB04421</span>
+                        <p>Johor-born foodie with a knack for finding the most authentic laksa stalls. Leads our culinary expeditions.</p>
+                        <div class="member-social">
+                            <a href="https:/www.x.com"><i class="fab fa-twitter"></i></a>
+                            <a href="https:/www.instagram.com"><i class="fab fa-instagram"></i></a>
+                            <a href="https:/www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="team-member">
+                    <div class="member-image" style="background-image: url('images/chile.jpg');">
+                        <!-- Placeholder for team member photo -->
+                    </div>
+                    <div class="member-info">
+                        <h3>Au Chi Le</h3>
+                        <span class="member-role">23ACB04119</span>
+                        <p>KL-based visual storyteller who captures the sizzle and steam of Malaysia's street food scene through his lens.</p>
+                        <div class="member-social">
+                            <a href="https:/www.x.com"><i class="fab fa-twitter"></i></a>
+                            <a href="https:/www.instagram.com"><i class="fab fa-instagram"></i></a>
+                            <a href="https:/www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="team-member">
+                    <div class="member-image" style="background-image: url('images/chisheng.jpg');">
+                        <!-- Placeholder for team member photo -->
+                    </div>
+                    <div class="member-info">
+                        <h3>Tee Chi Sheng</h3>
+                        <span class="member-role">23ACB05145</span>
+                        <p>Melaka food historian with a passion for documenting traditional cooking methods and developing home versions of street food classics.</p>
+                        <div class="member-social">
+                            <a href="https:/www.x.com"><i class="fab fa-twitter"></i></a>
+                            <a href="https:/www.instagram.com"><i class="fab fa-instagram"></i></a>
+                            <a href="https:/www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 4 -->
+                <div class="team-member">
+                    <div class="member-image" style="background-image: url('images/jzhao.jpg');">
+                        <!-- Placeholder for team member photo -->
+                    </div>
+                    <div class="member-info">
+                        <h3>Lim Jin Zhao</h3>
+                        <span class="member-role">22ACB06783</span>
+                        <p>Penang foodie who keeps our platform running and engages with our growing community of street food enthusiasts.</p>
+                        <div class="member-social">
+                            <a href="https:/www.x.com"><i class="fab fa-twitter"></i></a>
+                            <a href="https:/www.instagram.com"><i class="fab fa-instagram"></i></a>
+                            <a href="https:/www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story-section">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <div class="mission-content">
+                <div class="mission-image" style="background-image: url('images/story.jpg');"></div>
+                <div class="mission-text">
+                    <p>Jalan Eats began as a simple food blog in 2025 when our Front-end Web Development lecturer asked us to create a website of our choice.</p>
+                    <p>Stanley decided on creating a Malaysian street food website and formed our dream team in UTAR.</p>
+                    <p>Together, we've researched over 200 street food vendors across the 5 states, learned about more than 500 different dishes, and built a community of over 4 monthly readers who share our passion for Malaysian street food.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <h2 class="section-title">Our Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Authenticity</h3>
+                    <p>We prioritize genuine experiences and traditional cooking methods over trendy or commercialized food trends.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Community Support</h3>
+                    <p>We're committed to supporting local vendors and promoting sustainable tourism that benefits street food communities.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Education</h3>
+                    <p>We believe in sharing the stories, history, and techniques behind the food to deepen appreciation for Malaysian cuisine.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Jalan Eats</h3>
+                    <p>Your guide to the best street food experiences across Malaysia. Join us in celebrating the diverse flavors that make Malaysian cuisine unique.</p>
+                    <div class="social-links">
+                        <a href="https:/www.facebook.com"><i class="fab fa-facebook"></i></a>
+                        <a href="https:/www.instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https:/www.x.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https:/www.youtube.com"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>States</h3>
+                    <ul>
+                        <li><a href="penang.html">Penang</a></li>
+                        <li><a href="kl.html">Kuala Lumpur</a></li>
+                        <li><a href="ipoh.html">Ipoh</a></li>
+                        <li><a href="melaka.html">Melaka</a></li>
+                        <li><a href="johor.html">Johor</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@jalaneats.com</li>
+                        <li><i class="fas fa-phone"></i> +60 3 1234 5678</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Kuala Lumpur, Malaysia</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jalan Eats. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

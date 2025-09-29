@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Jalan Eats</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Jalan<span>Eats</span></h1>
+                <p>Malaysian Street Food Adventures</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">States <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="penang.html">Penang</a>
+                            <a href="kl.html">Kuala Lumpur</a>
+                            <a href="ipoh.html">Ipoh</a>
+                            <a href="melaka.html">Melaka</a>
+                            <a href="johor.html">Johor</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li id="auth-status">
+                        <!-- This will be dynamically populated by JavaScript -->
+                        <a href="login.html" class="btn-login" id="login-button">Login <i class="fas fa-user"></i></a>
+                        <div id="user-welcome" style="display: none;">
+                            <span>Welcome back, <span id="username-display"></span></span>
+                            <a href="#" id="logout-button" class="logout-btn">
+                                <i class="fas fa-sign-out-alt"></i> Sign Out
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section for Contact -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Contact Us</h1>
+            <p>Get in touch with the Jalan Eats team. Share your food recommendations, collaborate with us, or just say hello!</p>
+            <a href="#contact-info" class="btn btn-primary">Let's Connect</a>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section id="contact-info" class="featured-states">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="states-grid">
+                <div class="state-card">
+                    <div class="state-img" style="background: linear-gradient(135deg, var(--primary), var(--secondary)); display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-map-marker-alt" style="font-size: 60px; color: white;"></i>
+                    </div>
+                    <div class="state-content">
+                        <h3>Visit Our Office</h3>
+                        <p>UTAR, Kampar<br>Perak, Malaysia</p>
+                    </div>
+                </div>
+
+                <div class="state-card">
+                    <div class="state-img" style="background: linear-gradient(135deg, var(--accent), var(--primary)); display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-phone" style="font-size: 60px; color: white;"></i>
+                    </div>
+                    <div class="state-content">
+                        <h3>Call Us</h3>
+                        <p>+60 3 1234 5678<br>Mon-Fri, 9AM-6PM</p>
+                    </div>
+                </div>
+
+                <div class="state-card">
+                    <div class="state-img" style="background: linear-gradient(135deg, var(--secondary), var(--accent)); display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-envelope" style="font-size: 60px; color: white;"></i>
+                    </div>
+                    <div class="state-content">
+                        <h3>Email Us</h3>
+                        <p>info@jalaneats.com<br>We reply within 24 hours</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="featured-articles">
+        <div class="container">
+            <h2 class="section-title">Send Us a Message</h2>
+            <div class="articles-grid">
+                <div class="article-card">
+                    <div class="article-img" style="background: linear-gradient(135deg, var(--primary), var(--secondary)); display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-utensils" style="font-size: 80px; color: white;"></i>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-tag">Food Tips</span>
+                        <h3>Food Recommendations</h3>
+                        <p>Found an amazing street food spot? Share it with our community of food lovers!</p>
+                        <a href="mailto:recommendations@jalaneats.com" class="btn btn-outline">Share Your Find</a>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-img" style="background: linear-gradient(135deg, var(--accent), var(--dark)); display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-handshake" style="font-size: 80px; color: white;"></i>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-tag">Partnership</span>
+                        <h3>Business Collaboration</h3>
+                        <p>Restaurant owner or food business? Let's work together to showcase Malaysian cuisine.</p>
+                        <a href="mailto:business@jalaneats.com" class="btn btn-outline">Partner With Us</a>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-img" style="background: linear-gradient(135deg, var(--secondary), var(--primary)); display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-camera" style="font-size: 80px; color: white;"></i>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-tag">Photography</span>
+                        <h3>Submit Food Photos</h3>
+                        <p>Captured stunning food photography? We'd love to feature your work on our platform.</p>
+                        <a href="mailto:photos@jalaneats.com" class="btn btn-outline">Submit Photos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form in Newsletter Style -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Send Us a Message</h2>
+            <p>Have questions, suggestions, or just want to say hello? We'd love to hear from you!</p>
+            <form class="newsletter-form" id="contactForm">
+                <input type="text" id="name" name="name" placeholder="Your Name" required style="border-radius: 30px 0 0 30px;">
+                <input type="email" id="email" name="email" placeholder="Your Email" required style="border-radius: 0;">
+                <button type="submit" class="btn btn-primary" style="border-radius: 0 30px 30px 0; min-width: 150px;">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+            
+            <div id="apiResponse" style="display:none; margin-top:20px;"></div>
+
+            <div id="lastSaved" style="display:none; margin-top:16px; padding:14px; border:1px dashed #bbb; border-radius:8px;">
+                <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+                    <strong>Last submission (saved in your browser)</strong>
+                    <div style="display:flex; gap:8px;">
+                        <button id="prefillBtn" type="button" class="btn btn-outline" style="padding:6px 10px;">Prefill form</button>
+                        <button id="clearSavedBtn" type="button" class="btn btn-outline" style="padding:6px 10px;">Clear</button>
+                    </div>
+                </div>
+                <div id="lastSavedContent"></div>
+            </div>
+
+            <div style="margin-top: 30px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <textarea id="message" name="message" form="contactForm" placeholder="Tell us about your food adventure, recommendation, or inquiry..." 
+                    style="width: 100%; padding: 15px; border: none; border-radius: 30px; margin-bottom: 20px; min-height: 100px; resize: vertical;" required></textarea>
+                
+                <select id="subject" name="subject" form="contactForm" required 
+                    style="width: 100%; padding: 15px; border: none; border-radius: 30px; margin-bottom: 20px; background: white;">
+                    <option value="">Select a topic</option>
+                    <option value="food-recommendation">Food Recommendation</option>
+                    <option value="collaboration">Collaboration</option>
+                    <option value="feedback">Website Feedback</option>
+                    <option value="business">Business Inquiry</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="featured-states">
+        <div class="container">
+            <h2 class="section-title">Follow Our Food Journey</h2>
+            <div class="states-grid">
+                <div class="state-card">
+                    <div class="state-img" style="background: #1877f2; display: flex; align-items: center; justify-content: center;">
+                        <i class="fab fa-facebook" style="font-size: 60px; color: white;"></i>
+                    </div>
+                    <div class="state-content">
+                        <h3>Facebook</h3>
+                        <p>Join our community for daily food updates and local recommendations.</p>
+                        <a href="https://www.facebook.com" class="btn btn-outline">Follow Us</a>
+                    </div>
+                </div>
+
+                <div class="state-card">
+                    <div class="state-img" style="background: #E4405F; display: flex; align-items: center; justify-content: center;">
+                        <i class="fab fa-instagram" style="font-size: 60px; color: white;"></i>
+                    </div>
+                    <div class="state-content">
+                        <h3>Instagram</h3>
+                        <p>See stunning food photography and behind-the-scenes content.</p>
+                        <a href="https://www.instagram.com" class="btn btn-outline">Follow Us</a>
+                    </div>
+                </div>
+
+                <div class="state-card">
+                    <div class="state-img" style="background: #1DA1F2; display: flex; align-items: center; justify-content: center;">
+                        <i class="fab fa-twitter" style="font-size: 60px; color: white;"></i>
+                    </div>
+                    <div class="state-content">
+                        <h3>Twitter</h3>
+                        <p>Follow us for quick food updates, reviews, and Malaysian food culture.</p>
+                        <a href="https://www.twitter.com" class="btn btn-outline">Follow Us</a>
+                    </div>
+                </div>
+
+                <div class="state-card">
+                    <div class="state-img" style="background: #FF0000; display: flex; align-items: center; justify-content: center;">
+                        <i class="fab fa-youtube" style="font-size: 60px; color: white;"></i>
+                    </div>
+                    <div class="state-content">
+                        <h3>YouTube</h3>
+                        <p>Watch our food adventures and cooking tutorials from Malaysia.</p>
+                        <a href="https://www.youtube.com" class="btn btn-outline">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Jalan Eats</h3>
+                    <p>Your guide to the best street food experiences across Malaysia. Join us in celebrating the
+                        diverse flavors that make Malaysian cuisine unique.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.x.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>States</h3>
+                    <ul>
+                        <li><a href="penang.html">Penang</a></li>
+                        <li><a href="kl.html">Kuala Lumpur</a></li>
+                        <li><a href="ipoh.html">Ipoh</a></li>
+                        <li><a href="melaka.html">Melaka</a></li>
+                        <li><a href="johor.html">Johor</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@jalaneats.com</li>
+                        <li><i class="fas fa-phone"></i> +60 3 1234 5678</li>
+                        <li><i class="fas fa-map-marker-alt"></i> UTAR, Kampar</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jalan Eats. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // DOM refs
+            const form = document.getElementById('contactForm');
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const responseBox = document.getElementById('apiResponse');
+            const lastSavedBox = document.getElementById('lastSaved');
+            const lastSavedContent = document.getElementById('lastSavedContent');
+            const prefillBtn = document.getElementById('prefillBtn');
+            const clearSavedBtn = document.getElementById('clearSavedBtn');
+
+            const LS_KEY = 'jalaneats:lastFeedback';
+
+            // ---------- helpers ----------
+            function showSuccess(html) {
+                responseBox.className = 'success';
+                responseBox.innerHTML = html;
+                responseBox.style.display = 'block';
+            }
+            function showError(html) {
+                responseBox.className = 'error';
+                responseBox.innerHTML = html;
+                responseBox.style.display = 'block';
+            }
+            function saveToLocal(payload) {
+                const record = { ...payload, savedAt: new Date().toISOString() };
+                try {
+                    localStorage.setItem(LS_KEY, JSON.stringify(record));
+                    renderLastSaved();
+                } catch (e) {
+                    console.warn('localStorage not available:', e);
+                }
+            }
+            function escapeHtml(str) {
+                return String(str || '')
+                    .replaceAll('&', '&amp;')
+                    .replaceAll('<', '&lt;')
+                    .replaceAll('>', '&gt;')
+                    .replaceAll('"', '&quot;')
+                    .replaceAll("'", '&#039;');
+            }
+
+            function renderLastSaved() {
+                try {
+                    const raw = localStorage.getItem(LS_KEY);
+                    if (!raw) { 
+                        lastSavedBox.style.display = 'none'; 
+                        return; 
+                    }
+
+                    const data = JSON.parse(raw);
+                    const name = escapeHtml(data.name);
+                    const email = escapeHtml(data.email);
+                    const subject = escapeHtml(data.subject || 'Other');
+                    const message = escapeHtml(data.message);
+                    const savedAt = new Date(data.savedAt || Date.now()).toLocaleString();
+
+                    lastSavedContent.innerHTML = `
+                        <div class="lastSaved-label">Name</div>
+                        <div class="lastSaved-value">${name}</div>
+
+                        <div class="lastSaved-label">Email</div>
+                        <div class="lastSaved-value">${email}</div>
+
+                        <div class="lastSaved-label">Subject</div>
+                        <div class="lastSaved-value">${subject}</div>
+
+                        <div class="lastSaved-label">Message</div>
+                        <div class="lastSaved-value">${message}</div>
+
+                        <div class="lastSaved-label">Saved</div>
+                        <div class="lastSaved-value"><span class="savedAt-pill">${savedAt}</span></div>
+                    `;
+                    lastSavedBox.style.display = 'block';
+                } catch (e) {
+                    console.warn('localStorage not available:', e);
+                    lastSavedBox.style.display = 'none';
+                }
+            }
+
+            // Initial render of last-saved (for demo)
+            renderLastSaved();
+
+            // Prefill button
+            prefillBtn?.addEventListener('click', () => {
+                try {
+                    const raw = localStorage.getItem(LS_KEY);
+                    if (!raw) return;
+                    const data = JSON.parse(raw);
+                    // Fill fields
+                    document.getElementById('name').value = data.name || '';
+                    document.getElementById('email').value = data.email || '';
+                    document.getElementById('subject').value = data.subject || '';
+                    document.getElementById('message').value = data.message || '';
+                } catch (e) {
+                    console.warn('localStorage not available:', e);
+                }
+            });
+
+            // Clear button
+            clearSavedBtn?.addEventListener('click', () => {
+                try {
+                    localStorage.removeItem(LS_KEY);
+                    renderLastSaved();
+                } catch (e) {
+                    console.warn('localStorage not available:', e);
+                }
+            });
+
+            // ---------- form submit ----------
+            form.addEventListener('submit', async (event) => {
+                event.preventDefault();
+
+                const formData = new FormData(form);
+                const payload = {
+                    name: formData.get('name'),
+                    email: formData.get('email'),
+                    subject: formData.get('subject'),
+                    message: formData.get('message')
+                };
+
+                if (!payload.name || !payload.email || !payload.subject || !payload.message) {
+                    showError(`<i class="fas fa-exclamation-circle"></i> Please fill in all required fields.`);
+                    return;
+                }
+
+                // Loading state
+                const originalBtn = submitBtn.innerHTML;
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending…';
+                responseBox.style.display = 'none';
+
+                try {
+                    const res = await fetch('https://jsonplaceholder.typicode.com/posts', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (!res.ok) throw new Error(`API Error: ${res.status} ${res.statusText || ''}`);
+                    const json = await res.json();
+
+                    // Save to Local Storage for the demo
+                    saveToLocal(payload);
+
+                    showSuccess(`
+                        <i class="fas fa-check-circle"></i>
+                        Thank you, <strong>${payload.name}</strong>! Your message was sent successfully.
+                    `);
+
+                    form.reset();
+                } catch (err) {
+                    showError(`<i class="fas fa-times-circle"></i> Failed to send: ${err.message}`);
+                } finally {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalBtn;
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

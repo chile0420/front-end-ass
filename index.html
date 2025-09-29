@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jalan Eats - Malaysian Street Food Adventures</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Jalan<span>Eats</span></h1>
+                <p>Malaysian Street Food Adventures</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">States <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="penang.html">Penang</a>
+                            <a href="kl.html">Kuala Lumpur</a>
+                            <a href="ipoh.html">Ipoh</a>
+                            <a href="melaka.html">Melaka</a>
+                            <a href="johor.html">Johor</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li id="auth-status">
+                        <!-- This will be dynamically populated by JavaScript -->
+                        <a href="login.html" class="btn-login" id="login-button">Login <i class="fas fa-user"></i></a>
+                        <div id="user-welcome" style="display: none;">
+                            <span>Welcome back, <span id="username-display"></span></span>
+                            <a href="#" id="logout-button" class="logout-btn">
+                                <i class="fas fa-sign-out-alt"></i> Sign Out
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Discover Malaysia's Vibrant Street Food Culture</h1>
+            <p>Join us on a culinary journey through the bustling streets and hidden gems of Malaysia's food paradise
+            </p>
+            <a href="#explore" class="btn btn-primary">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- Featured States -->
+    <section id="explore" class="featured-states">
+        <div class="container">
+            <h2 class="section-title">Explore by State</h2>
+            <div class="states-grid">
+                <div class="state-card">
+                    <div class="state-img" style="background-image: url('images/penang.jpg');"></div>
+                    <div class="state-content">
+                        <h3>Penang</h3>
+                        <p>The food capital of Malaysia, famous for Char Kway Teow, Assam Laksa, and more.</p>
+                        <a href="penang.html" class="btn btn-outline">Explore Penang</a>
+                    </div>
+                </div>
+
+                <div class="state-card">
+                    <div class="state-img" style="background-image: url('images/kl.jpg');"></div>
+                    <div class="state-content">
+                        <h3>Kuala Lumpur</h3>
+                        <p>Experience the diverse street food culture in Malaysia's bustling capital city.</p>
+                        <a href="kl.html" class="btn btn-outline">Explore KL</a>
+                    </div>
+                </div>
+
+                <div class="state-card">
+                    <div class="state-img" style="background-image: url('images/ipoh.jpg');"></div>
+                    <div class="state-content">
+                        <h3>Ipoh</h3>
+                        <p>Discover hidden culinary gems in the city known for its white coffee and bean sprouts
+                            chicken.</p>
+                        <a href="ipoh.html" class="btn btn-outline">Explore Ipoh</a>
+                    </div>
+                </div>
+
+                <div class="state-card">
+                    <div class="state-img" style="background-image: url('images/melaka.jpg');"></div>
+                    <div class="state-content">
+                        <h3>Melaka</h3>
+                        <p>Taste the unique Peranakan flavors and historical dishes in this UNESCO World Heritage city.
+                        </p>
+                        <a href="melaka.html" class="btn btn-outline">Explore Melaka</a>
+                    </div>
+                </div>
+
+                <div class="state-card">
+                    <div class="state-img" style="background-image: url('images/johor.jpg');"></div>
+                    <div class="state-content">
+                        <h3>Johor</h3>
+                        <p>Experience the distinctive flavors of Southern Malaysia that influenced Singapore cuisine.
+                        </p>
+                        <a href="johor.html" class="btn btn-outline">Explore Johor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section class="featured-articles">
+        <div class="container">
+            <h2 class="section-title">Featured Street Food Stories</h2>
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="article-img" style="background-image: url('images/kwayteow.jpg');"></div>
+                    <div class="article-content">
+                        <span class="article-tag">Penang</span>
+                        <h3>The Ultimate Char Kway Teow Trail</h3>
+                        <p>Join us as we explore 10 of the best Char Kway Teow stalls in Georgetown, Penang.</p>
+                        <div class="article-meta">
+                        </div>
+                        <a href="penang.html" class="btn-readmore">Read More</a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-img" style="background-image: url('images/nightmarket.jpg');"></div>
+                    <div class="article-content">
+                        <span class="article-tag">Kuala Lumpur</span>
+                        <h3>Jalan Alor Night Market: A Food Lover's Paradise</h3>
+                        <p>Discover the iconic street food haven in the heart of Kuala Lumpur.</p>
+                        <div class="article-meta">
+                        </div>
+                        <a href="kl.html" class="btn-readmore">Read More</a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-img" style="background-image: url('images/nyonya.jpg');"></div>
+                    <div class="article-content">
+                        <span class="article-tag">Melaka</span>
+                        <h3>Peranakan Delights: Tracing Nyonya Cuisine in Melaka</h3>
+                        <p>Explore the unique fusion of Chinese and Malay flavors in Melaka's Peranakan cuisine.</p>
+                        <a href="melaka.html" class="btn-readmore">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Get the Latest Food Updates</h2>
+                <p>Subscribe to our newsletter for new food trails, hidden gems, and culinary adventures</p>
+                <form class="newsletter-form">
+                    <input id="subscribed_email" type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Jalan Eats</h3>
+                    <p>Your guide to the best street food experiences across Malaysia. Join us in celebrating the
+                        diverse flavors that make Malaysian cuisine unique.</p>
+                    <div class="social-links">
+                        <a href="https:/www.facebook.com"><i class="fab fa-facebook"></i></a>
+                        <a href="https:/www.instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https:/www.x.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https:/www.youtube.com"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>States</h3>
+                    <ul>
+                        <li><a href="penang.html">Penang</a></li>
+                        <li><a href="kl.html">Kuala Lumpur</a></li>
+                        <li><a href="ipoh.html">Ipoh</a></li>
+                        <li><a href="melaka.html">Melaka</a></li>
+                        <li><a href="johor.html">Johor</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@jalaneats.com</li>
+                        <li><i class="fas fa-phone"></i> +60 3 1234 5678</li>
+                        <li><i class="fas fa-map-marker-alt"></i> UTAR, Kampar</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jalan Eats. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
