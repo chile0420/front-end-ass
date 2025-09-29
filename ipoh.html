@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ipoh Street Food - Jalan Eats</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/ipoh.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Jalan<span>Eats</span></h1>
+                <p>Malaysian Street Food Adventures</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">States <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="penang.html">Penang</a>
+                            <a href="kl.html">Kuala Lumpur</a>
+                            <a href="ipoh.html" class="active">Ipoh</a>
+                            <a href="melaka.html">Melaka</a>
+                            <a href="johor.html">Johor</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li id="auth-status">
+                        <a href="login.html" class="btn-login" id="login-button">Login <i class="fas fa-user"></i></a>
+                        <div id="user-welcome" style="display: none;">
+                            <span>Welcome back, <span id="username-display"></span></span>
+                            <a href="#" id="logout-button" class="logout-btn">
+                                <i class="fas fa-sign-out-alt"></i> Sign Out
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="state-hero ipoh-hero">
+        <div class="container hero-content">
+            <h1>Ipoh Street Food Treasures</h1>
+            <p>Discover the unique flavors of this limestone city famous for its white coffee and authentic delicacies</p>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="state-intro">
+        <div class="container">
+            <h2 class="section-title">Ipoh's Flavorful Heritage</h2>
+            <div class="intro-content">
+                <div class="intro-text">
+                    <p>Ipoh's street food reflects its rich history as a tin mining town with influences from Chinese, Malay, and Indian culinary traditions. The city is renowned for its fresh ingredients, particularly bean sprouts and chicken, which thrive in the mineral-rich waters from limestone hills.</p>
+                    <p>From savory noodles to sweet desserts, Ipoh offers a diverse range of street food that showcases the region's unique culinary heritage and fresh local produce.</p>
+                    <div class="food-fact">
+                        <p id="food-fact">Ipoh is famous for its "Nga Choy Kai" (bean sprouts chicken) and white coffee, which gets its unique flavor from being roasted with palm oil margarine.</p>
+                    </div>
+                </div>
+                <div class="intro-image">
+                    <div class="image-placeholder" style="background-image: url('images/ipoh-intro.jpg');">
+                        <span>Ipoh Street Food Scene</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Dishes -->
+    <section class="featured-dishes">
+        <div class="container">
+            <h2 class="section-title">Must-Try Ipoh Street Foods</h2>
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <div class="dish-image" style="background-image: url('images/bean-sprouts-chicken.jpg');"></div>
+                    <div class="dish-content">
+                        <h3>Bean Sprouts Chicken</h3>
+                        <p>Tender poached chicken served with plump, crunchy bean sprouts and flavorful rice or noodles.</p>
+                        <div class="dish-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Lou Wong Restaurant</span>
+                            <span><i class="fas fa-star"></i> 4.8/5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-image" style="background-image: url('images/ipoh-hor-fun.jpg');"></div>
+                    <div class="dish-content">
+                        <h3>Ipoh Hor Fun</h3>
+                        <p>Flat rice noodles in a clear, flavorful chicken and prawn broth, topped with shredded chicken and prawns.</p>
+                        <div class="dish-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Thean Chun Coffee Shop</span>
+                            <span><i class="fas fa-star"></i> 4.7/5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-image" style="background-image: url('images/white-coffee.jpg');"></div>
+                    <div class="dish-content">
+                        <h3>Ipoh White Coffee</h3>
+                        <p>Locally roasted coffee beans brewed into a smooth, less bitter coffee served with condensed milk.</p>
+                        <div class="dish-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Various coffee shops</span>
+                            <span><i class="fas fa-star"></i> 4.9/5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-image" style="background-image: url('images/heong-peng.jpg');"></div>
+                    <div class="dish-content">
+                        <h3>Heong Peng</h3>
+                        <p>Fragrant baked biscuits with a crispy exterior and sweet, sticky maltose filling inside.</p>
+                        <div class="dish-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Sin Eng Heong</span>
+                            <span><i class="fas fa-star"></i> 4.6/5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Locations Map -->
+    <section class="food-map">
+        <div class="container">
+            <h2 class="section-title">Ipoh Street Food Hotspots</h2>
+            <div class="map-container">
+                <div id="ipoh-map" style="height: 100%; width: 100%;"></div>
+            </div>
+            <div class="location-list">
+                <div class="location-item">
+                    <h3>Lou Wong Restaurant</h3>
+                    <p><i class="far fa-clock"></i> Daily, 10:30am - 9:30pm</p>
+                    <p><i class="fas fa-utensils"></i> Famous for: Bean sprouts chicken, soy sauce chicken</p>
+                </div>
+                <div class="location-item">
+                    <h3>Thean Chun Coffee Shop</h3>
+                    <p><i class="far fa-clock"></i> Daily, 8am - 4:30pm</p>
+                    <p><i class="fas fa-utensils"></i> Famous for: Ipoh hor fun, caramel egg custard</p>
+                </div>
+                <div class="location-item">
+                    <h3>Sin Eng Heong</h3>
+                    <p><i class="far fa-clock"></i> Daily, 8am - 5pm</p>
+                    <p><i class="fas fa-utensils"></i> Famous for: Heong peng (fragrant biscuits), egg biscuits</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comments Section -->
+    <section class="comments-section">
+        <div class="container">
+            <h2 class="section-title">Foodie Comments</h2>
+            <div id="comments-container">
+                <p>No comments yet. Be the first to share your experience!</p>
+            </div>
+
+            <div id="comment-form-container" style="display: none;">
+                <h3>Share Your Experience</h3>
+                <form id="comment-form">
+                    <div class="form-group">
+                        <label for="comment-title">Title</label>
+                        <input type="text" id="comment-title" class="form-input" placeholder="Title of your review"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment-text">Your Comment</label>
+                        <textarea id="comment-text" class="form-input" rows="4"
+                            placeholder="Share your experience with Ipoh street food..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment-rating">Rating</label>
+                        <select id="comment-rating" class="form-input" required>
+                            <option value="">Select rating</option>
+                            <option value="5">5 Stars - Excellent</option>
+                            <option value="4">4 Stars - Very Good</option>
+                            <option value="3">3 Stars - Good</option>
+                            <option value="2">2 Stars - Fair</option>
+                            <option value="1">1 Star - Poor</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Comment</button>
+                </form>
+            </div>
+
+            <div id="login-prompt">
+                <p>Please <a href="login.html">log in</a> to share your comments about Ipoh street food.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Jalan Eats</h3>
+                    <p>Your guide to the best street food experiences across Malaysia. Join us in celebrating the
+                        diverse flavors that make Malaysian cuisine unique.</p>
+                    <div class="social-links">
+                        <a href="https:/www.facebook.com"><i class="fab fa-facebook"></i></a>
+                        <a href="https:/www.instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https:/www.x.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https:/www.youtube.com"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>States</h3>
+                    <ul>
+                        <li><a href="penang.html">Penang</a></li>
+                        <li><a href="kuala-lumpur.html">Kuala Lumpur</a></li>
+                        <li><a href="ipoh.html" class="active">Ipoh</a></li>
+                        <li><a href="melaka.html">Melaka</a></li>
+                        <li><a href="johor.html">Johor</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@jalaneats.com</li>
+                        <li><i class="fas fa-phone"></i> +60 3 1234 5678</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Kuala Lumpur, Malaysia</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jalan Eats. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/ipoh.js"></script>
+    <!-- Google Maps API -->
+    <script>
+        // Initialize Ipoh map
+        function initIpohMap() {
+            const mapOptions = {
+                center: { lat: 4.5975, lng: 101.0901 }, // Ipoh coordinates
+                zoom: 13,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                styles: [
+                    {
+                        "featureType": "administrative",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{ "color": "#444444" }]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "all",
+                        "stylers": [{ "color": "#f2f2f2" }]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "all",
+                        "stylers": [{ "visibility": "off" }]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "all",
+                        "stylers": [{ "saturation": -100 }, { "lightness": 45 }]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "all",
+                        "stylers": [{ "visibility": "simplified" }]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "labels.icon",
+                        "stylers": [{ "visibility": "off" }]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "all",
+                        "stylers": [{ "visibility": "off" }]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "all",
+                        "stylers": [{ "color": "#4285F4" }, { "visibility": "on" }]
+                    }
+                ]
+            };
+
+            const map = new google.maps.Map(document.getElementById('ipoh-map'), mapOptions);
+
+            // Add markers for food hotspots
+            const locations = [
+                {
+                    title: 'Lou Wong Restaurant',
+                    position: { lat: 4.5958, lng: 101.0779 },
+                    info: 'Daily, 10:30am - 9:30pm<br>Famous for: Bean sprouts chicken, soy sauce chicken'
+                },
+                {
+                    title: 'Thean Chun Coffee Shop',
+                    position: { lat: 4.5978, lng: 101.0763 },
+                    info: 'Daily, 8am - 4:30pm<br>Famous for: Ipoh hor fun, caramel egg custard'
+                },
+                {
+                    title: 'Sin Eng Heong',
+                    position: { lat: 4.5943, lng: 101.0821 },
+                    info: 'Daily, 8am - 5pm<br>Famous for: Heong peng (fragrant biscuits), egg biscuits'
+                }
+            ];
+
+            const infoWindow = new google.maps.InfoWindow();
+
+            locations.forEach(location => {
+                const marker = new google.maps.Marker({
+                    position: location.position,
+                    map: map,
+                    title: location.title,
+                    icon: {
+                        url: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
+                    }
+                });
+
+                marker.addListener('click', () => {
+                    infoWindow.setContent(`
+                        <div class="map-info-window">
+                            <h3>${location.title}</h3>
+                            <p>${location.info}</p>
+                        </div>
+                    `);
+                    infoWindow.open(map, marker);
+                });
+            });
+        }
+
+        // Load Google Maps API
+        function loadGoogleMaps() {
+            const script = document.createElement('script');
+            script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDbMAHl2xxe2lmtRU-BOUcrC-5yDVb8-1I&callback=initIpohMap`;
+            script.async = true;
+            script.defer = true;
+            document.head.appendChild(script);
+        }
+
+        // Load the map when the page is ready
+        document.addEventListener('DOMContentLoaded', function () {
+            loadGoogleMaps();
+        });
+    </script>
+</body>
+
+</html>
