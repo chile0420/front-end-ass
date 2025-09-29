@@ -1,0 +1,167 @@
+/* About page specific styles */
+.about-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/aboutbanner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.about-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.mission-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.mission-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.mission-text {
+    flex: 1;
+}
+
+.mission-image {
+    flex: 1;
+    height: 300px;
+    background: url('../images/mission.jpg') center/cover no-repeat;
+    border-radius: 10px;
+}
+
+.team-section {
+    padding: 80px 0;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.team-member {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.member-image {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.member-info {
+    padding: 20px;
+}
+
+.member-info h3 {
+    margin-bottom: 5px;
+    color: var(--dark);
+}
+
+.member-role {
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.member-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.member-social a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: #f8f9fa;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    color: var(--dark);
+    transition: all 0.3s;
+}
+
+.member-social a:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.story-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.values-section {
+    padding: 80px 0;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.value-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-icon {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .mission-content {
+        flex-direction: column;
+    }
+    
+    .mission-image {
+        width: 100%;
+    }
+    
+    .about-hero h1 {
+        font-size: 2.2rem;
+    }
+}
