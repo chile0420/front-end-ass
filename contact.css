@@ -1,0 +1,106 @@
+/* Response box base */ 
+#apiResponse {
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  display: none;
+}
+
+/* Success style */
+#apiResponse.success {
+  background-color: #e6ffed;
+  border: 1px solid #2ecc71;
+  color: #2c662d;
+}
+
+/* Error style */
+#apiResponse.error {
+  background-color: #ffeaea;
+  border: 1px solid #e74c3c;
+  color: #a94442;
+}
+
+/* Add icon spacing */
+#apiResponse i {
+  margin-right: 8px;
+}
+
+/* Last submission (Local Storage) panel */
+#lastSaved {
+  background: #fdfdfd;
+  border: 1px dashed var(--accent);
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-top: 20px;
+  text-align: left;
+  color: var(--dark);
+  font-size: 0.9rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Title row inside lastSaved */
+#lastSaved strong {
+  font-size: 1rem;
+  color: var(--accent);
+}
+
+/* Buttons inside lastSaved */
+#lastSaved button {
+  border: 1px solid var(--primary);
+  border-radius: 20px;
+  background: white;
+  color: var(--primary);
+  padding: 5px 12px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#lastSaved button:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* Preformatted JSON preview */
+#lastSavedContent {
+  margin-top: 10px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  padding: 10px;
+  font-family: "Courier New", monospace;
+  font-size: 0.85rem;
+  white-space: pre-wrap;
+  color: var(--text-light);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Pretty field list for Local Storage panel */
+#lastSavedContent {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 8px 16px;
+  align-items: start;
+}
+
+.lastSaved-label {
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.lastSaved-value {
+  color: var(--text);
+  word-break: break-word;
+}
+
+/* Timestamp pill */
+.savedAt-pill {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  background: #f1f3f5;
+  color: var(--text-light);
+  border: 1px solid #e9ecef;
+}
